@@ -41,49 +41,83 @@
 body {
   font-family: Roboto, Helvetica, Sans-Serif;
   letter-spacing: 0.042rem;
-  background-color: var(--primary-bg-color);
-  overflow-x: hidden;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  background: var(--default-primary-color);
 }
 
-
-form {
-  margin: 0 auto;
-  /* margin-bottom: 25px; */
-  padding: 1rem;
-  /* background: var(--overlay-bg-color); */
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 100%;
-  max-width: 25rem;
-  border-radius: 5px;
+#title {
+  font-family: 'Roboto Slab', Helvetica, Sans-Serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  color: var(--text-primary-color);
 }
 
-input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-input[type=submit] {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: #E4F1FE;
-  border: 1px solid grey;
-  box-shadow: 2px 2px #999;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #FFFEC4;
+.form-container {
+  margin: 1rem auto;
+  max-width: 768px;
+  color: var(--overlay-text-color);
+  background: var(--primary-bg-color);
 }
 
 #description {
-  grid-column: span 2;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+/*-----form style------*/
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0;
+  grid-gap: 2rem;
+  padding: 2rem ;
+  background: var(--overlay-bg-color); 
+}
+
+#survey-form label {
+  display: block;
+}
+
+#survey-form input, #survey-form textarea {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+  /* color: var(--text-primary-color);
+  background: var(--overlay-bg-color); */
+  border: 1px solid var(--accent-color);
+}
+
+.radio-menu-container {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.radio-menu-container label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+}​
+
+/* input[type="radio"] {
+  margin-right: 0;
+} */
+
+
+.submit-btn {
+  width: 30%;
+  padding: 1rem;
+  color: var(--text-primary-color);
+  background: var(--accent-color);
+  border: 0;
+  border-radius: 25px;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#survey-form button:hover, #survey-form button:focus {
+  background: var(--text-primary-color);
+  font-weight: bold;
+  color: var(--dark-primary-color);
+  outline: 0;
 }

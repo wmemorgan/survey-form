@@ -10,41 +10,48 @@
 </head>
 <body>
   <h1 id="title">Survey Form</h1>
-  <form action="" id="survey-form">
-    <p id="description">Let us know how we can improve freeCodeCamp</p>
-              <p>
-            <label for="name">Name*</label>
-            <input type="text" name="name" id="name" placeholder="John Doe" required/>
-          </p>
-          <p>
-            <label for="email">Email Address*</label>
-            <input type="email" name="email" id="email" placeholder="john@email.com" required/>
-          </p>
-          <p>
-            <label for="age">Age*</label>
-            <input type="number" name="age" id="age" min="1" max="200" required/>
-          </p>
-          <p>
-            <label for="role">Which option best describes your current role</label>
-            <select name="role" id="role">
-              <option value="student">Student</option>
-              <option value="employee">Full Time Employee</option>
-              <option value="freelancer">Freelancer</option>
-              <option value="nosay">Prefer not to say</option>
-              <option value="other">Other</option>
-            </select>
-          </p>
-          <p>
-            <label for=""></label>
-          </p>
-          <p className="full">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5"></textarea>
-          </p>
-            <button type="submit" className="contact-submit-btn">Send Message</button>
-          </p>
-        </form>
-  </form>
+  <div class="form-container">
+    <form action="" id="survey-form">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <p>
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required/>
+      </p>
+      <p>
+        <label for="email">Email Address*</label>
+        <input type="email" name="email" id="email" placeholder="john@email.com" required/>
+      </p>
+      <p>
+        <label for="age">Age*</label>
+        <input type="number" name="age" id="age" min="1" max="200"/>
+      </p>
+      <p>
+        <label for="role">Which option best describes your current role</label>
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="employee">Full Time Employee</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="nosay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <p>
+        <label for="recommend">* How likely are you to recommend freeCodeCamp to a friend?</label>
+        <div class="radio-menu-container">
+          <input type="radio" name="recommend" value="definitely" id="definitely"><label for="definitely">Definitely</label>
+          <input type="radio" name="recommend" value="maybe"><label for="maybe">Maybe</label>
+          <input type="radio" name="recommend" value="notsure"><label for="notsure">Not Sure</label>
+        </div>
+
+      </p>
+      <p className="full">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+      </p>
+      <button type="submit" class="submit-btn">Submit</button>
+      </p>
+    </form>
+  </div>
   
   <!-- FCC Test Script -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

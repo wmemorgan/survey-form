@@ -80,11 +80,13 @@ body {
 
 #survey-form input, #survey-form textarea {
   width: 80%;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 5px;
-  /* color: var(--text-primary-color);
-  background: var(--overlay-bg-color); */
   border: 1px solid var(--accent-color);
+}
+
+#survey-form select {
+  padding: 0.5rem;
 }
 
 .radio-menu-container {
@@ -98,10 +100,12 @@ body {
   text-align: left;
 }​
 
-/* input[type="radio"] {
-  margin-right: 0;
-} */
-
+#survey-form button:hover, #survey-form button:focus {
+  background: var(--text-primary-color);
+  font-weight: bold;
+  color: var(--dark-primary-color);
+  outline: 0;
+}
 
 .submit-btn {
   width: 30%;
@@ -113,11 +117,4 @@ body {
   letter-spacing: 0.12rem;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-#survey-form button:hover, #survey-form button:focus {
-  background: var(--text-primary-color);
-  font-weight: bold;
-  color: var(--dark-primary-color);
-  outline: 0;
 }

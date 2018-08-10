@@ -22,8 +22,8 @@
         <input type="email" name="email" id="email" placeholder="Enter your email" required/>
       </p>
       <p>
-        <label for="age">Age*</label>
-        <input type="number" name="age" id="age" min="1" max="150" placeholder="Age" required/>
+        <label id="number-label" for="number">Age*</label>
+        <input type="number" name="number" id="number" min="1" max="150" placeholder="Age" required/>
       </p>
       <p>
         <label for="role">Which option best describes your current role</label>
@@ -36,14 +36,15 @@
           <option value="other">Other</option>
         </select>
       </p>
-      <p>
-        <label for="recommend">* How likely are you to recommend freeCodeCamp to a friend?</label>
-        <div class="radio-menu-container">
-          <input type="radio" name="recommend" value="definitely" id="definitely"><label for="definitely">Definitely</label>
-          <input type="radio" name="recommend" value="maybe"><label for="maybe">Maybe</label>
-          <input type="radio" name="recommend" value="notsure"><label for="notsure">Not Sure</label>
+        <p>* How likely are you to recommend freeCodeCamp to a friend?</p>
+        <div class="menu-container">
+          <input type="radio" name="recommend" value="definitely" id="definitely">
+          <label for="definitely">Definitely</label>
+          <input type="radio" name="recommend" value="maybe">
+          <label for="maybe">Maybe</label>
+          <input type="radio" name="recommend" value="notsure">
+          <label for="notsure">Not Sure</label>
         </div>
-      </p>
       <p>
         <label for="dropdown">What do you like most in FCC?</label>
         <select name="role" id="dropdown">
@@ -54,13 +55,41 @@
           <option value="opensource">Open Source</option>
         </select>
       </p>
+      <p>Things that should be improved in the future (Check all that apply)</p>
+          <div class="menu-container">
+            <input type="checkbox" name="improvements" id="frontend" value="1">
+            <label for="frontend">Front-end Projects</label>
+            <input type="checkbox" name="improvements" id="backend" value="2">
+            <label for="backend">Back-end Projects</label>
+            <input type="checkbox" name="improvements" id="dataviz" value="3">
+            <label for="dataviz">Data Visualization</label>
+            <input type="checkbox" name="improvements" id="challenges" value="4">
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" name="improvements" id="opensource" value="5">
+            <label for="opensource">Open Source Community</label>
+            <input type="checkbox" name="improvements" id="helprooms" value="6">
+            <label for="helprooms">Gitter help rooms</label>
+            <input type="checkbox" name="improvements" id="videos" value="7">
+            <label for="videos">Videos</label>
+            <input type="checkbox" name="improvements" id="meetups" value="8">
+            <label for="meetups">Meetups</label>
+            <input type="checkbox" name="improvements" id="wiki" value="9">
+            <label for="wiki">Wiki</label>
+            <input type="checkbox" name="improvements" id="forum" value="10">
+            <label for="forum">Forum</label>
+            <input type="checkbox" name="improvements" id="courses" value="11">
+            <label for="courses">Additional Courses</label>
+          </div>
+
       <p>
         <label for="message">Message</label>
         <textarea name="message" id="message" rows="5" placeholder="Enter your comment here..."></textarea>
       </p>
-      <button type="submit" class="submit-btn">Submit</button>
+      <button id="submit" type="submit" class="submit-btn">Submit</button>
       </p>
     </form>
+    <input type="checkbox" name="improvements" id="frontend">
+
   </div>
   
   <!-- FCC Test Script -->

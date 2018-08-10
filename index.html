@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <form action="" id="survey-form">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+              <p>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required/>
+          </p>
+          <p>
+            <label for="email">Email Address*</label>
+            <input type="email" name="email" id="email" placeholder="john@email.com" required/>
+          </p>
+          <p>
+            <label for="age">Age*</label>
+            <input type="number" name="age" id="age" min="1" max="200" required/>
+          </p>
+          <p>
+            <label for="role">Which option best describes your current role</label>
+            <select name="role" id="role">
+              <option value="student">Student</option>
+              <option value="employee">Full Time Employee</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="nosay">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for=""></label>
+          </p>
+          <p className="full">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </p>
+            <button type="submit" className="contact-submit-btn">Send Message</button>
+          </p>
+        </form>
+  </form>
+  
+  <!-- FCC Test Script -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

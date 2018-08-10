@@ -14,24 +14,25 @@
     <form action="" id="survey-form">
       <p id="description">Let us know how we can improve freeCodeCamp</p>
       <p>
-        <label for="name">Name*</label>
-        <input type="text" name="name" id="name" placeholder="John Doe" required/>
+        <label id="name-label" for="name">Name*</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required/>
       </p>
       <p>
-        <label for="email">Email Address*</label>
-        <input type="email" name="email" id="email" placeholder="john@email.com" required/>
+        <label id="email-label" for="email">Email Address*</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required/>
       </p>
       <p>
         <label for="age">Age*</label>
-        <input type="number" name="age" id="age" min="1" max="200"/>
+        <input type="number" name="age" id="age" min="1" max="150" placeholder="Age" required/>
       </p>
       <p>
         <label for="role">Which option best describes your current role</label>
         <select name="role" id="role">
+          <option value="" disabled selected>Select an option</option>
           <option value="student">Student</option>
           <option value="employee">Full Time Employee</option>
           <option value="freelancer">Freelancer</option>
-          <option value="nosay">Prefer not to say</option>
+          <option value="noanswer">Prefer not to say</option>
           <option value="other">Other</option>
         </select>
       </p>
@@ -42,11 +43,20 @@
           <input type="radio" name="recommend" value="maybe"><label for="maybe">Maybe</label>
           <input type="radio" name="recommend" value="notsure"><label for="notsure">Not Sure</label>
         </div>
-
       </p>
-      <p className="full">
+      <p>
+        <label for="dropdown">What do you like most in FCC?</label>
+        <select name="role" id="dropdown">
+          <option value="" disabled selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </p>
+      <p>
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="5"></textarea>
+        <textarea name="message" id="message" rows="5" placeholder="Enter your comment here..."></textarea>
       </p>
       <button type="submit" class="submit-btn">Submit</button>
       </p>
